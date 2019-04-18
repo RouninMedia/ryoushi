@@ -101,7 +101,7 @@ if ((isset($_GET['ryoushi'])) && ($_GET['ryoushi'] === 'true')) {
     $SubFilePath = $FilePath.'/'.$Subfolders[$i];
     $SubSubfolders = scandir($SubFilePath);
 
-    for ($j = 3; $j < count($SubSubfolders); $j++) {
+    for ($j = 0; $j < count($SubSubfolders); $j++) {
 
       if (in_array($SubSubfolders[$j], $Skip_Folders)) continue;
 
